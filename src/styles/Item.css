@@ -334,7 +334,7 @@
     width:100%
 }
 
-.Header_actionBlock__6PMdo button {
+.Header_actionBlock__6PMdo {
     height: 36px;
     border-radius: 2px;
     text-align: center;
@@ -351,19 +351,19 @@
     width:100%
 }
 
-.Header_actionBlock__6PMdo button:hover {
+.Header_actionBlock__6PMdo  {
     background:#1ced60
 }
 
-.Header_actionBlock__6PMdo button:focus {
+.Header_actionBlock__6PMdo {
     outline:none
 }
 
-.Header_actionBlock__6PMdo button:active {
+.Header_actionBlock__6PMdo {
     background:#34ef70
 }
 
-.Header_actionBlock__6PMdo button.Header_disabled__Osnqq {
+.Header_actionBlock__6PMdo {
     opacity: .3;
     cursor:not-allowed
 }
@@ -508,7 +508,7 @@
     display: -webkit-flex;
     color: #666;
     max-width: 120px;
-    margin:0 auto
+    margin:0 0
 }
 
 .Counter_stepperInput__QuRj0 .Counter_decrement__BJh_A, .Counter_stepperInput__QuRj0 .Counter_increment__MsHxZ {
@@ -548,7 +548,7 @@
 
 .Counter_stepperInput__QuRj0 .Counter_quantity__lx_LP {
     height: 24px;
-    width: 48px;
+    width: 10px;
     text-align: center;
     margin: 0 12px;
     border-radius: 2px;
@@ -626,7 +626,7 @@
     padding:16px
 }
 
-.ProductItem_product__m91Xa .ProductItem_productAction__Q1gga button {
+.ProductItem_product__m91Xa .ProductItem_productAction__Q1gga {
     height: 36px;
     border-radius: 2px;
     text-align: center;
@@ -642,19 +642,19 @@
     transition:all .3s ease-in
 }
 
-.ProductItem_product__m91Xa .ProductItem_productAction__Q1gga button:hover {
+.ProductItem_product__m91Xa .ProductItem_productAction__Q1gga {
     background:#1ced60
 }
 
-.ProductItem_product__m91Xa .ProductItem_productAction__Q1gga button:focus {
+.ProductItem_product__m91Xa .ProductItem_productAction__Q1gga {
     outline:none
 }
 
-.ProductItem_product__m91Xa .ProductItem_productAction__Q1gga button:active {
+.ProductItem_product__m91Xa .ProductItem_productAction__Q1gga {
     background:#34ef70
 }
 
-.ProductItem_product__m91Xa .ProductItem_productAction__Q1gga button.ProductItem_added__KXj_K {
+.ProductItem_product__m91Xa .ProductItem_productAction__Q1gga {
     background:#fc7710
 }
 
@@ -923,3 +923,66 @@
     border-radius: 4px 4px 0 0
 }
 
+.Add_to_car_button {
+  appearance: none;
+  background-color: #84B33E;
+  border: 1px solid rgba(27, 31, 35, .15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  padding: 6px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.Add_to_car_button:focus:not(:focus-visible):not(.focus-visible) {
+  box-shadow: none;
+  outline: none;
+}
+
+.Add_to_car_button:hover {
+  background-color: #2c974b;
+}
+
+.Add_to_car_button:focus {
+  box-shadow: rgba(46, 164, 79, .4) 0 0 0 3px;
+  outline: none;
+}
+
+.Add_to_car_button:disabled {
+  background-color: #94d3a2;
+  border-color: rgba(27, 31, 35, .1);
+  color: rgba(255, 255, 255, .8);
+  cursor: default;
+}
+
+.Add_to_car_button:active {
+  background-color: #298e46;
+  box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
+}
+
+.post-card-image {
+    margin: 0 0 10px 0;
+    width: auto;
+    height: 200px;
+    background: var(--color-secondary) no-repeat center center;
+    background-size: cover;
+}
+
+.post-card-footer {
+    margin: 10px 0 0 0;
+    color: var(--color-secondary);
+}

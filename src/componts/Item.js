@@ -1,9 +1,7 @@
 import * as React from "react";
-import { Link } from "react-router-dom";
-
 
 // Styles
-import "../styles/app.css"
+import "../styles/Item.css"
 
 function Item() {
 
@@ -21,11 +19,12 @@ function Item() {
             <footer className="post-card-footer">
                 <div className="Counter_stepperInput__QuRj0">
                     <button className="Counter_decrement__BJh_A" type="button">–</button>
-                    <input type="number" className="Counter_quantity__lx_LP" value="1"/>
+                    <input type="number" className="Counter_quantity__lx_LP" style={{width:"35px"}} value="1"/>
                     <button className="Counter_increment__MsHxZ" type="button">+</button>
                 </div>
+                <br/>
                 <div class="ProductItem_productAction__Q1gga">
-                    <button className="" type="button">ADD TO CART</button>
+                    <button className="Add_to_car_button" type="button">ADD TO CART</button>
                 </div>
             </footer>
         </div>

@@ -90,6 +90,9 @@ import "../styles/app.css"
                         <Item/>
                         <Item/>
                         <Item/>
+                        <Item/>
+                        <Item/>
+                        <Item/>
                     </div>
                 </main>
             </div>
