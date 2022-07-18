@@ -1149,3 +1149,14 @@ h6 {
     justify-content: center;
     align-items: center;
   }
+
+  .categories {
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    margin-left: 35%;
+    margin-right: 35%;
+    grid-gap: 5px;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: -150px;
+  }

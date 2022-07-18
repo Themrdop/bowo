@@ -1,6 +1,7 @@
 import * as React from "react";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
+import Categoria from "./Categoria";
 import Item from './Item';
 
 
@@ -80,6 +81,17 @@ import "../styles/app.css"
                                 </Link>
                             </div>
                         </nav>
+                    </div>
+                    <div className="categories">
+                        <Categoria URLImagen={"/images/chiles.jpeg"}
+                                   URLNavegacion={"/"}
+                                   Titulo={"chiles"}/>
+                        <Categoria URLImagen={"/images/concerva.jpeg"}
+                                   URLNavegacion={"/"}
+                                   Titulo={"concerva"}/>
+                        <Categoria URLImagen={"/images/funcionales.jpeg"}
+                                   URLNavegacion={"/"}
+                                   Titulo={"funcionales"}/>
                     </div>
                 </header>
 
