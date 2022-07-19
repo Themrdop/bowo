@@ -977,8 +977,8 @@
 .post-card-image {
     margin: 0 0 10px 0;
     width: auto;
-    height: 200px;
-    background: var(--color-secondary) no-repeat center center;
+    height: 325px;
+    
     background-size: cover;
 }
 

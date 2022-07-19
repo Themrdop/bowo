@@ -3,7 +3,7 @@ import * as React from "react";
 // Styles
 import "../styles/Item.css"
 
-function Item() {
+function Item({NombreProducto, Descripcion, URL}) {
 
     return (
         <div className="post-card">
@@ -11,11 +11,11 @@ function Item() {
             <div
                 className="post-card-image"
                 style={{
-                    backgroundImage: `url(https://res.cloudinary.com/sivadass/image/upload/v1493620046/dummy-products/broccoli.jpg)`,
+                    backgroundImage: `url(`+URL+`)`,
                 }}/>
-                <h2 className="post-card-title">Fruta 1</h2>
+                <h2 className="post-card-title">{NombreProducto}</h2>
             </header>
-            <section className="post-card-excerpt">blah blah</section>
+            <section className="post-card-excerpt">{Descripcion}</section>
             <footer className="post-card-footer">
                 <div className="Counter_stepperInput__QuRj0">
                     <button className="Counter_decrement__BJh_A" type="button">–</button>

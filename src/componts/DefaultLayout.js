@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import Categoria from "./Categoria";
 import Item from './Item';
+import productos from './data/productos.json';
 
 
 // Styles
@@ -17,7 +18,7 @@ import "../styles/app.css"
  *
  */
  function DefaultLayout() {
-        const instagramUrl = "https://www.instagram.com/bowo.crc/";
+    const instagramUrl = "https://www.instagram.com/bowo.crc/";
 
     return <>
         <Helmet>
@@ -73,14 +74,7 @@ import "../styles/app.css"
                                 alt="logo"
                             />
                         </div>
-                        <nav className="site-nav">
-                            <div className="site-nav-left">
-                                {/* The navigation items as setup in Ghost */}
-                                <Link className="site-nav-item" to="/">
-                                    Home
-                                </Link>
-                            </div>
-                        </nav>
+                       
                     </div>
                     <div className="categories">
                         <Categoria URLImagen={"/images/chiles.jpeg"}
@@ -98,13 +92,12 @@ import "../styles/app.css"
                 <main className="site-main">
                     {/* All the main content gets inserted here, index.js, post.js */}
                     <div className="grid">
-                        <Item/>
-                        <Item/>
-                        <Item/>
-                        <Item/>
-                        <Item/>
-                        <Item/>
-                        <Item/>
+
+                        {productos.map((p) => {
+                            return <Item URL={p.url}
+                                  NombreProducto={p.nombre}
+                                  Descripcion={p.descripcion}/>
+                        })}
                     </div>
                 </main>
             </div>

@@ -785,11 +785,13 @@ h6 {
 
 .post-card {
     color: inherit;
+    transition: transform .2s;
     text-decoration: none;
 }
 
 .post-card:hover {
     text-decoration: none;
+    transform: scale(1.05);
 }
 
 .post-card-tags {
@@ -1143,11 +1145,12 @@ h6 {
 
  .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-gap: 12px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 50px;
     padding: 50px;
     justify-content: center;
     align-items: center;
+    margin-top: 100px;
   }
 
   .categories {
@@ -1156,7 +1159,7 @@ h6 {
     display: grid;
     margin-left: 35%;
     margin-right: 35%;
-    grid-gap: 5px;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     margin-bottom: -150px;
   }

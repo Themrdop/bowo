@@ -1,0 +1,13 @@
+[
+    {"ID":"1", "url":"http://localhost:3000/images/products/guanabana.jpeg", "nombre":"Guanabana", "descripcion":""},
+    {"ID":"2", "url":"http://localhost:3000/images/products/frutas.jpeg", "nombre":"Frutas", "descripcion":""},
+    {"ID":"3", "url":"http://localhost:3000/images/products/brocoli.jpeg", "nombre":"Brócoli", "descripcion":""},
+    {"ID":"4", "url":"http://localhost:3000/images/products/mora.jpeg", "nombre":"Mora", "descripcion":""},
+    {"ID":"5", "url":"http://localhost:3000/images/products/maracuya.jpeg", "nombre":"Maracuyá", "descripcion":""},
+    {"ID":"6", "url":"http://localhost:3000/images/products/cas.jpeg", "nombre":"Cas", "descripcion":""},
+    {"ID":"7", "url":"http://localhost:3000/images/products/carambola.jpeg", "nombre":"Carambola", "descripcion":""},
+    {"ID":"8", "url":"http://localhost:3000/images/products/pinna.jpeg", "nombre":"Piña", "descripcion":""},
+    {"ID":"9", "url":"http://localhost:3000/images/products/papaya.jpeg", "nombre":"Papaya", "descripcion":""},
+    {"ID":"10", "url":"http://localhost:3000/images/products/mango.jpeg", "nombre":"Mango", "descripcion":""},
+    {"ID":"11", "url":"http://localhost:3000/images/products/ayote.jpeg", "nombre":"Ayote", "descripcion":""}
+]
