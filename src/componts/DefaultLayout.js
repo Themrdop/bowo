@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import Categoria from "./Categoria";
 import Item from './Item';
 import productos from './data/productos.json';
+import Navbar from "./NavBar";
 
 
 // Styles
@@ -18,7 +19,7 @@ import "../styles/app.css"
  *
  */
  function DefaultLayout() {
-    const instagramUrl = "https://www.instagram.com/bowo.crc/";
+    //const instagramUrl = "https://www.instagram.com/bowo.crc/";
 
     return <>
         <Helmet>
@@ -31,73 +32,32 @@ import "../styles/app.css"
                 <header className="site-head" style={{backgroundColor:"#84B33E"}}>
                     <div className="container">
                         <div className="site-mast">
-                            <div className="site-mast-left">
-                                
-                            </div>
-                            <div className="site-mast-right">
-                                <a
-                                    href={instagramUrl}
-                                    className="site-nav-item"
-                                    target="_blank"
-                                    rel="noopener noreferrer">
-                                    <img
-                                        className="site-nav-icon"
-                                        src="/images/icons/insta.svg"
-                                        alt="Instagram"/>
-                                </a>
-                                <a
-                                    href={instagramUrl}
-                                    className="site-nav-item"
-                                    target="_blank"
-                                    rel="noopener noreferrer">
-                                    <img
-                                        className="site-nav-icon"
-                                        src="/images/icons/facebook.svg"
-                                        alt="Instagram"/>
-                                </a>
-                                <a
-                                    href={instagramUrl}
-                                    className="site-nav-item"
-                                    target="_blank"
-                                    rel="noopener noreferrer">
-                                    <img
-                                        className="site-nav-icon"
-                                        src="/images/icons/whatsapp.svg"
-                                        alt="Instagram"/>
-                                </a>
-                            </div>
+                            <Navbar/>
                         </div>
-                        <div className="image-container">
-                            <img
-                                src="/images/logo.jpg"
-                                style={{height:150}}
-                                alt="logo"
-                            />
-                        </div>
-                       
-                    </div>
-                    <div className="categories">
-                        <Categoria URLImagen={"/images/chiles.jpeg"}
-                                   URLNavegacion={"/"}
-                                   Titulo={"chiles"}/>
-                        <Categoria URLImagen={"/images/concerva.jpeg"}
-                                   URLNavegacion={"/"}
-                                   Titulo={"concerva"}/>
-                        <Categoria URLImagen={"/images/funcionales.jpeg"}
-                                   URLNavegacion={"/"}
-                                   Titulo={"funcionales"}/>
                     </div>
                 </header>
 
-                <main className="site-main">
-                    {/* All the main content gets inserted here, index.js, post.js */}
-                    <div className="grid">
-
-                        {productos.map((p) => {
-                            return <Item URL={p.url}
-                                  NombreProducto={p.nombre}
-                                  Descripcion={p.descripcion}/>
-                        })}
+                <main className="site-main container">
+                    <div className="row">
+                        <aside className="sidebar-container col-lg-1 col-md-1 col-6 order-last order-md-first sidebar-left area-sidebar-shop">
+                            <h3>Categorías</h3>
+                            <Categoria URLImagen={"/images/chiles.jpeg"}
+                                    URLNavegacion={"/"}
+                                    Titulo={"Chiles"}/>
+                            <Categoria URLImagen={"/images/concerva.jpeg"}
+                                    URLNavegacion={"/"}
+                                    Titulo={"Concerva"}/>
+                            <Categoria URLImagen={"/images/funcionales.jpeg"}
+                                    URLNavegacion={"/"}
+                                    Titulo={"Funcionales"}/>
+                        </aside>
+                        <div className="grid site-content shop-content-area col-lg-9 col-12 col-md-9 description-area-before content-with-products wd-builder-off ajax-loaded">
+                            {productos.map((p) => {
+                                return <Item URL={p.url}
+                                    NombreProducto={p.nombre}
+                                    Descripcion={p.descripcion}/>
+                            })}
+                        </div>
                     </div>
                 </main>
             </div>

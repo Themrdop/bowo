@@ -9,13 +9,9 @@ function Categoria({Titulo, URLImagen, URLNavegacion}) {
     return (
         <>
             <Link to={URLNavegacion}>
-                <img
-                    src={URLImagen}
-                    style={{height:150}}
-                    alt={Titulo}
-                />
-                <h4>{Titulo}</h4>
-            </Link>
+                    
+                    <h4>{Titulo}</h4>
+                </Link>
         </>
     );
 };

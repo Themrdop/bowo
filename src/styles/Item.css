@@ -976,9 +976,8 @@
 
 .post-card-image {
     margin: 0 0 10px 0;
-    width: auto;
-    height: 325px;
-    
+    width: 225px;
+    height: 225px;
     background-size: cover;
 }
 
